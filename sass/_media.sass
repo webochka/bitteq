@@ -1,0 +1,476 @@
+
+@media screen and (max-width: 1250px)
+	.container
+		padding: 0 20px
+
+
+//sidebar
+@media screen and (max-width: 1250px)
+	.container__sidebar
+		padding: 0 10%
+
+	.sidebar__icons
+		width: 80%
+
+@media screen and (max-width: 783px)
+	.sidebar__icons
+		width: 100%
+
+	.sidebar__info
+		font-size: 10px
+
+@media screen and (max-width: 600px)
+	.sidebar__icons
+		padding-top: 84%
+
+	.sidebar__icon__link
+		margin: 10px
+
+	.sidebar__menu__link
+		font-size: 11px
+
+@media screen and (max-width: 500px)
+	.wrap
+		flex-direction: column
+
+	.sidebar,
+	.section
+		width: 100%
+
+	.sidebar
+		position: absolute
+		top: 0
+		z-index: 10
+		padding: 4% 0
+
+	.container__sidebar
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0 5%
+
+	.sidebar__menu__button
+		border-bottom: 9px double #8451d4
+		border-top: 3px solid #8451d4
+		height: 15px
+		width: 7%
+
+	.sidebar__logo
+		width: 35%
+
+	.sidebar__icons,
+	.sidebar__menu,
+	.sidebar__info
+		display: none
+		
+	.sidebar__icon__link
+		display: inline-block
+		filter: contrast(10)
+		
+	.sidebar__menu__link
+		display: block
+		font-size: 17px
+		padding: 20px 0
+
+	.sidebar__open
+		z-index: 10
+		top: 0
+		bottom: 0
+		animation: menu-header-open 0.3s ease-out
+
+	.sidebar__icons__open,
+	.sidebar__menu__open,
+		display: block
+		position: absolute
+		padding: 0
+
+	.sidebar__icons__open
+		display: flex
+		justify-content: space-around
+
+	.sidebar__menu__open
+		top: 20%
+
+	.sidebar__icons__open
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		background: #8451d4
+		padding: 5% 0
+
+@keyframes menu-header-open
+	0% 
+		height: 40%
+	100%
+		height: 95%
+
+
+@media screen and (max-width: 350px)
+	.sidebar__logo
+		width: 45%
+
+	.sidebar__menu__button
+		width: 10%
+
+//header
+
+@media screen and (max-width: 830px)
+	.header__title,
+	.about__ukraine__title
+		font-size: 6.5vw
+		
+	.header__title
+		line-height: 63px
+
+@media screen and (max-width: 450px)
+	.header__title
+		font-size: 9.5vw
+
+@media screen and (max-width: 350px)
+	.header
+		background-position: 20% 0% 
+		padding-top: 40%
+
+	.header__title
+		line-height: 50px
+
+//about
+@media screen and (max-width: 920px)
+	.section__about__description
+		font-size: 20px
+		width: 65%
+
+@media screen and (max-width: 795px)
+	.section__about__description
+		width: 60%
+
+@media screen and (max-width: 700px)
+	.section__about__block
+		flex-wrap: wrap
+
+	.section__about__description
+		font-size: 18px
+		line-height: 23px
+		width: 100%
+
+@media screen and (max-width: 540px)
+	.section__about__block
+		justify-content: center
+		text-align: center
+
+	.section__about__button
+		padding: 12px 20px
+
+
+//services 
+@media screen and (max-width: 1350px)
+	.services__title:before
+		left: 100%
+		margin-left: -125%
+
+	
+@media screen and (max-width: 850px)
+	.services__description,
+	.partners__description
+		width: 90%
+
+	.services__title
+		width: 100%
+
+	.services__title:before
+		font-size: 14vw
+		left: 0
+		margin-left: 0%
+
+@media screen and (max-width: 750px)
+	.services__list
+		flex-wrap: wrap
+		justify-content: space-around
+
+	.services__list__item
+		width: 40%
+		padding-top: 7%
+
+@media screen and (max-width: 600px)
+	.services__list__item__description
+		font-size: 13px
+
+	.services__title,
+	.partners__title,
+	.about__ukraine__article__title
+		font-size: 27px
+		line-height: 34px
+
+	
+
+@media screen and (max-width: 500px)
+	.services__title:before
+		display: none
+
+	.services__list
+		padding-bottom: 15%
+
+@media screen and (max-width: 400px)
+	.services__list__item
+		width: 100%
+		padding-top: 10%
+	
+@media screen and (max-width: 350px)
+	.services
+		padding-top: 5%
+
+	.services__list
+		padding-top: 0%
+
+	.services__title, 
+	.partners__title, 
+	.about__ukraine__article__title
+		font-size: 24px
+
+
+	.services__description,
+	.partners__description,
+	.about__ukraine__article__description
+		width: 100% 
+		font-size: 16px
+		
+	.services__button--more
+		padding: 14px 32px
+
+
+
+//partners (do 400)
+@media screen and (max-width: 1159px)
+	.partners__slider .slick-track
+		left: 15%
+
+@media screen and (max-width: 999px)
+	.partners__slider .slick-track
+		left: 4%
+
+	.partners__slider__gallery
+		padding: 2.8% 0.3% 1.9%
+
+	.slick-next
+		padding: 15px
+
+@media screen and (max-width: 799px)
+	.partners__slider .slick-track
+		left: 21%
+
+@media screen and (max-width: 679px)
+	.partners
+		padding: 6% 0
+
+	.partners__slider .slick-track
+		left: 5%
+
+@media screen and (max-width: 549px)
+	.partners__slider .slick-track
+		left: 42%
+
+@media screen and (max-width: 399px)
+	.partners__slider .slick-track
+		left: 19%
+
+@media screen and (max-width: 299px)
+	.partners__slider .slick-track
+		left: 0%
+
+	.slick-next
+		padding: 13px
+		right: 1px
+
+//about__ukraine 
+@media screen and (max-width: 1135px)
+	.about__ukraine__article__list
+		justify-content: space-around
+		
+	.about__ukraine__article__list__item
+		width: 40%
+
+	.about__ukraine__article__list__item__description
+		padding-bottom: 7%
+
+	.about__ukraine__article__list:after
+		width: 74%
+		left: 61%
+
+@media screen and (max-width: 850px)
+	.about__ukraine__article__list__item__description,
+		width: 90%
+
+	.about__ukraine__article__list
+		left: 9%
+
+	.about__ukraine__article__list:after
+		left: 65%
+
+@media screen and (max-width: 744px)
+	.about__ukraine__article__description
+		width: 95%
+
+	.about__ukraine__article__list__item__digits
+		font-size: 38px
+
+	.about__ukraine__article__list__item__description
+		font-size: 12px
+		line-height: 15px
+
+@media screen and (max-width: 585px)
+	.about__ukraine__article__list__item__digits
+		font-size: 30px
+
+	.about__ukraine__article__list__item__description
+		font-size: 11px
+	
+	.about__ukraine__article__list:after
+		width: 100%
+		left: 51%
+
+
+@media screen and (max-width: 500px)
+	.about__ukraine--bg2
+		padding: 0
+
+	.about__ukraine__article
+		width: 100%
+		margin: 0
+
+@media screen and (max-width: 450px)
+	.about__ukraine__title
+		font-size: 9vw
+
+	.about__ukraine__article__list
+		left: 0
+		width: 100%
+
+	.about__ukraine__article__list:after
+		width: 140%
+		left: 25%
+
+
+	.about__ukraine__article__list__item
+		width: 100%
+		text-align: center
+
+	.about__ukraine__article__list__item__description
+		margin: 0 auto
+		width: 50%
+
+		
+
+//positions
+@media screen and (max-width: 1184px)
+	.positions .slick-track
+		left: -30%
+
+@media screen and (max-width: 999px)
+	.positions .slick-track
+		left: 0%
+
+@media screen and (max-width: 899px)
+	.positions .slick-track
+		left: -16.5%
+
+@media screen and (max-width: 749px)
+	.positions__category__header
+		width: 90%
+		justify-content: space-between
+
+	.positions__category__header--date
+		width: auto
+
+	.positions .slick-track
+		left: 35%
+
+@media screen and (max-width: 649px)
+	.positions .slick-track
+		left: 25%
+
+	.positions__category__title
+		font-size: 20px
+
+	.positions__category__header--positions
+		font-size: 11px
+
+@media screen and (max-width: 389px)
+	.positions .slick-track
+		left: 0%
+
+	.positions__category__header--date
+		font-size: 12px
+
+
+
+
+//footer
+@media screen and (max-width: 1100px)
+	.footer__contacts,
+	.footer__contacts__title
+		padding: 4% 0
+
+	.footer__contacts__title
+		width: auto
+		
+	.footer__contacts__adress
+		flex-wrap: wrap
+
+	.footer__contacts__adress--city
+		width: 50.01%
+
+@media screen and (max-width: 980px)
+	.footer
+		flex-wrap: wrap
+
+	.footer__contacts
+		width: 100%
+
+	.footer__contacts--bg
+		padding: 10%  0 20% 
+
+	.footer__contacts__title--yellow
+		display: inline-block
+
+	.footer__contacts__adress--city
+		width: auto
+
+	.footer__contacts__adress__title
+		font-size: 20px
+
+	.footer__contacts__form__button
+		padding: 14px 68px
+		margin: 10% auto
+
+@media screen and (max-width: 650px)
+		.footer__contacts__title
+			font-size: 50px
+
+		.footer__contacts__adress__description
+			font-size: 14px
+
+@media screen and (max-width: 400px)
+	.footer__contacts--bg
+		text-align: left
+		padding-left: 20px
+
+	.footer__contacts__title--yellow
+		display: block
+
+	.footer__contacts__adress
+		justify-content: flex-start
+
+	.footer__contacts__adress--city
+		width: 100%
+
+
+@media screen and (max-width: 350px)
+	.footer__contacts__form__input
+		width: 85%
+		padding-top: 12%
+
+	.footer__contacts__form__button
+		margin: 20% auto
+
+	

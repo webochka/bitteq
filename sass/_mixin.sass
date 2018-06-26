@@ -1,0 +1,12 @@
+$font: 'Montserrat', sans-serif
+
+@mixin background-img ($img:file, $type:png, $img-size:cover ,$repeat:no-repeat, $x:0, $y:0) 
+    background-image: url(../images/bg/#{$img}.#{$type})
+    background-repeat: $repeat
+    background-position: $x+% $y+%
+    background-size: $img-size
+
+
+@mixin before-after() 
+	content: ''
+	display: block
